@@ -1,5 +1,5 @@
 {
-  "name": "markdown-batch",
+  "name": "thetawaves",
   "version": "1.0.0",
   "description": "Batch conversion of markdown files to html",
   "main": "index.js",
