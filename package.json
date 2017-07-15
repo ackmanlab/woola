@@ -1,0 +1,37 @@
+{
+  "name": "markdown-batch",
+  "version": "1.0.0",
+  "description": "Batch conversion of markdown files to html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ackmanlab/markdown-batch.git"
+  },
+  "keywords": [
+    "markdown-it",
+    "commonmark",
+    "jekyll",
+    "notebook",
+    "blog"
+  ],
+  "author": "James Ackman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ackmanlab/markdown-batch/issues"
+  },
+  "homepage": "https://github.com/ackmanlab/markdown-batch#readme",
+  "dependencies": {
+    "front-matter": "^2.1.2",
+    "markdown-it": "^8.3.1",
+    "markdown-it-anchor": "^4.0.0",
+    "markdown-it-deflist": "^2.0.3",
+    "markdown-it-footnote": "git+https://github.com/ackmanlab/markdown-it-footnote.git",
+    "markdown-it-katex": "^2.0.3",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "micromatch": "^3.0.4"
+  }
+}
