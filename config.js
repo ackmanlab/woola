@@ -10,6 +10,7 @@ twitter_username: "JamesAckman",
 github_username:  "ackmanlab",
 data_path: "https://s3-us-west-2.amazonaws.com/int.data.ackmanlab.com/assets",
 local_url: "https://ackmanlab.com/local.html",
+css: "https://ackmanlab.com/css/main.css",
 //permalink: "/:categories/:year-:month-:day-:title.html",
 collections: {
   posts: {
@@ -27,12 +28,17 @@ icons: {
   twitter: `<svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>`,
   bananaslug: `<svg width="24px" height="24px" viewBox="0 0 38 38" enable-background="new 0 0 38 38"> <path fill="#F1B521" d="M10,12.09c0-4,2-8,0-10s-3,2-2,2c1.414,0,2,2,1,5S10,13.09,10,12.09z"/> <path fill="#F1B521" d="M6.125,12.09c0-4,2-8,0-10s-3,2-2,2c1.414,0,2,2,1,5S6.125,13.09,6.125,12.09z"/> <path fill="#F1B521" d="M37,31.465c0,1-1,1-2,1s-18,0-23,0s-7.272-3.09-8-6c-1-4,2-11,0-12s-3-1-3-3s4.47-5.265,7-4 c4,2,2.767,6.932,2,10c-0.88,3.521,1.115,3.596,5,5c4.939,1.787,12.32,4.439,14,5C32,28.465,37,30.465,37,31.465z"/> <circle fill="#00458C" cx="4.5" cy="9.029" r="0.5"/> <circle fill="#00458C" cx="6.5" cy="10.029" r="0.5"/> </svg>`
   },
-srcPath: '_posts', 
-dstPath: '_site', 
-overwrite: false, 
-extFilter: ['*.md','*.txt','*.mmd','*.markdown'],
-options: {matchBase: false, ignore: ['.git', 'node_modules', 'README.md', 'test', 'lib', 'css', 'bin']}
+options: {
+  srcPath: 'notes', 
+  dstPath: '_site', 
+  overwrite: true, 
+  extFilter: ['*.md','*.txt','*.mmd','*.markdown'],
+  matchBase: false, 
+  ignore: ['.git', 'node_modules', 'README.md', 'test', 'lib', 'css', 'bin']}
 }
-//move icons to a require, try inside includes?
+
+// TODO:
+// - move icons to a require, try inside includes?
+// - uuid hash meta, origin vs revision hashes, doi meta
 
 module.exports = site;
