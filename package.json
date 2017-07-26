@@ -1,28 +1,31 @@
 {
-  "name": "thetawaves",
+  "name": "woola",
   "version": "1.0.0",
-  "description": "Batch conversion of markdown files to html",
-  "main": "index.js",
+  "description": "Render, build, and publish markdown notebook content",
+  "main": "./lib/mdbuild.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "html": "node ./lib/mdbuild.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ackmanlab/markdown-batch.git"
+    "url": "git+https://github.com/ackmanlab/woola.git"
   },
   "keywords": [
     "markdown-it",
     "commonmark",
     "jekyll",
     "notebook",
-    "blog"
+    "blog",
+    "pandoc",
+    "pdf"
   ],
   "author": "James Ackman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ackmanlab/markdown-batch/issues"
+    "url": "https://github.com/ackmanlab/woola/issues"
   },
-  "homepage": "https://github.com/ackmanlab/markdown-batch#readme",
+  "homepage": "https://github.com/ackmanlab/woola#readme",
   "dependencies": {
     "front-matter": "^2.1.2",
     "markdown-it": "^8.3.1",
