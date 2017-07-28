@@ -29,7 +29,12 @@ options: {
   overwrite: true, 
   extFilter: ['*.md','*.txt','*.mmd','*.markdown'],
   matchBase: false, 
-  ignore: ['.git', 'node_modules', 'README.md', 'test', 'lib', 'css', 'bin']}
+  ignore: ['.git', 'node_modules', 'README.md', 'test', 'lib', 'css', 'bin'],
+  defaults: {
+    categories: 'pub',
+    layout: 'post'
+    }
+  }
 }
 
 // TODO:
