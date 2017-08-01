@@ -5,7 +5,8 @@
   "main": "./lib/mdbuild.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "html": "node ./lib/mdbuild.js"
+    "build": "node ./lib/mdbuild.js",
+    "start": "node ./lib/server.js",
   },
   "repository": {
     "type": "git",
