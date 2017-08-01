@@ -20,9 +20,9 @@ collections: {
     }
   },
 pages: [
-{title: "about", url: "/about.html", author: "James", date: "2017-07-13 23:13:21", content: "hello universe", layout: "page"},
-{title: "people", url: "/people.html", author: "Ackman", date: "2017-07-13 23:14:01", content: "foobar", layout: "page"}
-],
+  {title: "about", url: "/about.html", author: "James", date: "2017-07-13 23:13:21", content: "hello universe", layout: "page"},
+  {title: "people", url: "/people.html", author: "Ackman", date: "2017-07-13 23:14:01", content: "foobar", layout: "page"}
+  ],
 options: {
   srcPath: '_posts', 
   dstPath: '_site', 
@@ -34,7 +34,48 @@ options: {
     categories: 'pub',
     layout: 'post'
     }
-  }
+  },
+pdfconfig: {
+  default: { 
+    format: "Letter",
+    border: {
+      top: "0.5in",
+      right: "0.5in",
+      bottom: "0.5in",
+      left: "0.5in"
+    },
+    header: {
+      height: "0"
+    },
+    footer: {
+      height: "2mm",
+      contents: {
+        first: " ",
+        default: "<div style='text-align:right;color:#333333;font-size:0.875em'>Ackman, {{page}}/{{pages}}</div>"
+        }
+      }
+    },
+  cover: { 
+    format: "Letter",
+    border: {
+      top: "0.5in",
+      right: "0.5in",
+      bottom: "0.5in",
+      left: "0.5in"
+      },
+    header: {
+      height: "1.25in"
+      },
+    footer: {
+      height: "2mm",
+      contents: {
+        first: " ",
+        default: "<div style='text-align:right;color:#adadad;font-size:0.875em'>Ackman, {{page}}/{{pages}}</div>"
+        }
+      }
+    }
+  },
+  use: "default"
 }
 
 // TODO:
