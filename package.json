@@ -1,12 +1,16 @@
 {
   "name": "woola",
   "version": "1.0.0",
-  "description": "Render, build, and publish markdown notebook content",
+  "description": "A friendly beast to help you render, build, and publish markdown notebook content",
   "main": "./lib/mdbuild.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./lib/mdbuild.js",
-    "start": "node ./lib/server.js",
+    "start": "node ./lib/mdwatcher.js",
+    "postinstall": "newshortcut='alias mdwatcher=\"node '$(npm prefix)'/lib/mdwatcher.js\"'; echo $newshortcut >> ~/.bashrc; source ~/.bashrc"
+  },
+  "bin": {
+    "mdwatcher": "./lib/mdwatcher.js"
   },
   "repository": {
     "type": "git",
