@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./lib/mdbuild.js",
     "start": "node ./lib/mdwatcher.js",
-    "postinstall": "newshortcut='alias mdwatcher=\"node '$(npm prefix)'/lib/mdwatcher.js\"'; echo $newshortcut >> ~/.bashrc; source ~/.bashrc"
+    "postinstall": "newshortcut='alias woola=\"node '$(npm prefix)'/lib/mdwatcher.js\"'; echo $newshortcut >> ~/.bashrc; source ~/.bashrc"
   },
   "bin": {
-    "mdwatcher": "./lib/mdwatcher.js"
+    "woola": "./lib/mdwatcher.js"
   },
   "repository": {
     "type": "git",
