@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./lib/mdbuild.js",
-    "start": "node ./lib/mdwatcher.js",
-    "postinstall": "newshortcut='alias woola=\"node '$(npm prefix)'/lib/mdwatcher.js\"'; echo $newshortcut >> ~/.bashrc; source ~/.bashrc"
+    "start": "node ./lib/server.js",
+    "postinstall": "binalias='alias woola=\"node '$(npm prefix)'/lib/server.js\"'; echo $binalias >> ~/.bashrc; source ~/.bashrc"
   },
   "bin": {
-    "woola": "./lib/mdwatcher.js"
+    "woola": "./lib/server.js"
   },
   "repository": {
     "type": "git",
