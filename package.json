@@ -32,7 +32,6 @@
   },
   "homepage": "https://github.com/ackmanlab/woola#readme",
   "dependencies": {
-    "browser-sync": "^2.18.13",
     "chokidar": "^1.7.0",
     "front-matter": "^2.1.2",
     "html-pdf": "^2.1.0",
