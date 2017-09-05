@@ -16,16 +16,16 @@ woola– A friendly beast who builds and serves content for you.
 
 ## Installation
 
-Install into a local project directory:  
+First, ensure you have [installed node.js & npm](https://docs.npmjs.com/getting-started/installing-node).
+
+Then install into a local project directory:  
 
     npm install https://github.com/ackmanlab/woola.git
 
-Or install globally (may need to sudo)
+Or install globally (may need to sudo)... so the app can be run from anywhere:  
 
     npm install -g https://github.com/ackmanlab/woola.git
 
-
-If npm is not yet installed locally, first see [Installing node, npm](https://docs.npmjs.com/getting-started/installing-node)
 
 ## Usage
 
