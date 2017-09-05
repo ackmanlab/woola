@@ -13,27 +13,27 @@ data_path: "https://cdn.yoursite.com/assets",
 local_url: "https://yoursite.com/local.html", //url entry point for the 'local' type category
 css: "https://cdn.yoursite.com/css/main.css",
 //permalink: "/:categories/:year-:month-:day-:title.html",
-//collections not currently used
-collections: {
-  posts: {
-    output: true,
-    permalink: "/:categories/:year-:month-:day-:title.html"
-    }
-  },
 pages: [
-  {title: "about", url: "/about.html", author: "sola", date: "2017-07-13 23:13:21", content: "hello universe", layout: "post"},
-  {title: "people", url: "/people.html", author: "woola", date: "2017-07-13 23:14:01", content: "foobar", layout: "page"}
+  {title: "about", url: "about.html", author: "sola", date: "2017-07-13 23:13:21", content: "hello universe", layout: "post", categories: ["public"]},
+  {title: "people", url: "people.html", author: "woola", date: "2017-07-13 23:14:01", content: "foobar", layout: "page", categories: ["local", "draft"]}
   ],
 options: {
-  srcPath: '_posts', 
-  dstPath: '_site', 
+  srcPath: 'src', 
+  dstPath: 'dist', 
   overwrite: true, 
-  extFilter: ['*.md','*.txt','*.mmd','*.markdown'],
+  extFilter: ['*.md','*.txt','*.mmd','*.markdown','*.html'],
   matchBase: false, 
   ignore: ['.DS_Store', '.git', '.gitignore', 'node_modules'],
-  ignoreAlt: ['.DS_Store', '.git', '.gitignore', 'node_modules', 'test', 'lib', 'css', 'bin'],
+  buildAssets: [], //things to copy into the dist dir on build, e.g. ['error.png', 'favicon.png', 'feed.xml', 'css', 'assets', 'lib' ]
+  filterCategories: ['local', 'pri'], //category names that you want to use as filters and sub directory names for grouping posts together
+  categories: {
+    local: {
+      icon: 'bananaslug'
+    }
+  },
   defaults: {
-    categories: 'pub',
+    build: 'master',
+    categories: ['public'],
     layout: 'post'
     }
   },
@@ -79,6 +79,14 @@ pdfconfig: {
   },
   use: "default"
 }
+//TODO: switch to collection based logic below (in options.filterCategories) and add permalinks
+//permalink: "/:categories/:year-:month-:day-:title.html",
+// collections: {
+//   posts: {
+//     output: true,
+//     permalink: "/:categories/:year-:month-:day-:title.html"
+//     }
+//   },
 
 // TODO:
 // - uuid hash meta, origin vs revision hashes, doi meta

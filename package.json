@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./lib/mdbuild.js",
     "start": "node ./lib/server.js",
-    "postinstall": "binalias='alias woola=\"node '$(npm prefix)'/lib/server.js\"'; echo $binalias >> ~/.bashrc; source ~/.bashrc"
+    "bininstall": "binalias='alias woola=\"node '$(npm prefix)'/lib/server.js\"'; echo $binalias >> ~/.bashrc; source ~/.bashrc"
   },
   "bin": {
-    "woola": "./lib/server.js"
+    "woola": "./lib/index.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
   "dependencies": {
     "chokidar": "^1.7.0",
     "front-matter": "^2.1.2",
+    "fs-extra": "^4.0.1",
     "html-pdf": "^2.1.0",
     "markdown-it": "^8.3.1",
     "markdown-it-anchor": "^4.0.0",
