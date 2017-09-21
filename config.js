@@ -75,9 +75,9 @@ pdfconfig: {
         default: "<div style='text-align:right;color:#adadad;font-size:0.875em'>{{page}}/{{pages}}</div>"
         }
       }
-    }
-  },
+    },
   use: "default"
+  }
 }
 //TODO: switch to collection based logic below (in options.filterCategories) and add permalinks
 //permalink: "/:categories/:year-:month-:day-:title.html",
