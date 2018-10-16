@@ -32,7 +32,9 @@
   },
   "homepage": "https://github.com/ackmanlab/woola#readme",
   "dependencies": {
-    "chokidar": "^1.7.0",
+    "ansi": "^0.3.1",
+    "chokidar": "^2.0.2",
+    "connect": "^3.6.6",
     "front-matter": "^2.1.2",
     "fs-extra": "^4.0.1",
     "html-pdf": "^2.1.0",
@@ -43,7 +45,10 @@
     "markdown-it-katex": "^2.0.3",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
-    "micromatch": "^3.0.4",
+    "micromatch": "^3.1.9",
+    "open": "0.0.5",
+    "openport": "0.0.5",
+    "send": "^0.16.2",
     "socket.io": "^2.0.3"
   }
 }

@@ -21,7 +21,7 @@ options: {
   srcPath: 'src', 
   dstPath: 'dist', 
   overwrite: true, 
-  extFilter: ['*.md','*.txt','*.mmd','*.markdown','*.html'],
+  extFilter: ['*.md','*.txt','*.mmd','*.markdown','*.mkd','*.html'],
   matchBase: false, 
   ignore: ['.DS_Store', '.git', '.gitignore', 'node_modules'],
   buildAssets: [], //things to copy into the dist dir on build, e.g. ['error.png', 'favicon.png', 'feed.xml', 'css', 'assets', 'lib' ]
