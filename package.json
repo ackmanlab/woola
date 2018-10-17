@@ -48,6 +48,7 @@
     "micromatch": "^3.1.9",
     "open": "0.0.5",
     "openport": "0.0.5",
+    "puppeteer": "^1.9.0",
     "send": "^0.16.2",
     "socket.io": "^2.0.3"
   }
