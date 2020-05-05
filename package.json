@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/ackmanlab/woola#readme",
   "dependencies": {
+    "@iktakahiro/markdown-it-katex": "^3.1.0",
     "ansi": "^0.3.1",
     "chokidar": "^3.3.0",
     "connect": "^3.7.0",
@@ -41,7 +42,6 @@
     "markdown-it-anchor": "^5.2.5",
     "markdown-it-deflist": "^2.0.3",
     "markdown-it-footnote": "git+https://github.com/ackmanlab/markdown-it-footnote.git",
-    "markdown-it-katex": "^2.0.3",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
     "micromatch": "^4.0.2",
