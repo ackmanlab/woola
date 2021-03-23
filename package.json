@@ -44,6 +44,7 @@
     "markdown-it-footnote": "git+https://github.com/ackmanlab/markdown-it-footnote.git",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
+    "markdown-it-toc-done-right": "^4.1.0",
     "micromatch": "^4.0.2",
     "open": "^7.0.0",
     "openport": "^0.0.6",
