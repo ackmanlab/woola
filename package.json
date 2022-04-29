@@ -34,22 +34,22 @@
   "dependencies": {
     "@iktakahiro/markdown-it-katex": "^3.0.1",
     "ansi": "^0.3.1",
-    "chokidar": "^3.5.1",
+    "chokidar": "^3.5.3",
     "connect": "^3.7.0",
     "front-matter": "^4.0.2",
-    "fs-extra": "^9.1.0",
-    "markdown-it": "^12.0.0",
-    "markdown-it-anchor": "^7.1.0",
+    "fs-extra": "^10.1.0",
+    "markdown-it": "^12.3.2",
+    "markdown-it-anchor": "^8.6.2",
     "markdown-it-deflist": "^2.1.0",
     "markdown-it-footnote": "git+https://github.com/ackmanlab/markdown-it-footnote.git",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
     "markdown-it-toc-done-right": "^4.2.0",
-    "micromatch": "^4.0.2",
-    "open": "^8.0.4",
+    "micromatch": "^4.0.5",
+    "open": "^8.4.0",
     "openport": "^0.0.6",
-    "puppeteer": "^8.0.0",
-    "send": "^0.17.1",
-    "socket.io": "^4.0.0"
+    "puppeteer": "^13.7.0",
+    "send": "^0.18.0",
+    "socket.io": "^4.5.0"
   }
 }
